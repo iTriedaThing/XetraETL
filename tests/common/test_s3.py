@@ -94,7 +94,7 @@ class TestS3BucketConnectorMethods(unittest.TestCase):
         list_result = self.s3_bucket_conn.list_files_in_prefix(prefix_exp)
         # Tests after method execution
         self.assertTrue(not list_result)
-        
+
 
 if __name__ == "__main__":
     #unittest.main()
