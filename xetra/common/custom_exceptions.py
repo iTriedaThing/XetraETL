@@ -11,6 +11,11 @@ class WrongFormatException(Exception):
     """
     WrongFormatException class
 
-    exception that can be raised when the format type
-    given as a parameter is not supported.
+    exception that can be raised when the format type given as a parameter is not supported.
+    """
+class WrongMetaFileException(Exception):
+    """
+    WrongMetaFileException class
+
+    exception that can be raised when the meta file format is incorrect
     """
