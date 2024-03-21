@@ -4,12 +4,23 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
-            "name": "Python Debugger: Current File",
+            "name": "Python: Current File",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "xetra_etl_run",
+            "type": "debugpy",
+            "python.pythonPath": "C:/Users/benma/.virtualenvs/XetraETL-7LWjWeb8/Scripts/python.exe",
+            "request": "launch",
+            "program": "E:/Projects/ETL Pipelines with Python+Pandas/Udemy_PythonEtlPiplines2/XetraETL/xetra/common/run_instructor.py",
+            "console": "integratedTerminal",
+            "args": ["E:/Projects/ETL Pipelines with Python+Pandas/Udemy_PythonEtlPiplines2/XetraETL/configs/xetra_report1_config.yml"]
         }
     ]
+    
 }

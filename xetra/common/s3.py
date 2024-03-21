@@ -90,7 +90,7 @@ class S3BucketConnector():
 
     def __put_object(self, out_buffer: StringIO or BytesIO, key: str):
         """
-        Helper funciton tfor self.write_df_to_s3()
+        Helper function tfor self.write_df_to_s3()
 
         :out_buffer: StringIO | BytesIO that should be written
         :key: target key of the saved file
@@ -98,4 +98,3 @@ class S3BucketConnector():
         self._logger.info('Writing file to %s/%s/%s', self.endpoint_url, self._bucket.name, key)
         self._bucket.put_object(Body=out_buffer.getvalue(), Key=key)
         return True
-    
